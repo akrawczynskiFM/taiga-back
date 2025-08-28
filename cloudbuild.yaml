@@ -20,7 +20,7 @@ steps:
   - '--set-cloudsql-instances'
   - 'fml-prod-reports-ce:europe-west3:taiga-it-ce'
   - '--set-env-vars'
-  - 'POSTGRES_DB=taiga,POSTGRES_USER=taiga,INSTANCE_CONNECTION_NAME=fml-prod-reports-ce:europe-west3:taiga-it-ce'
+  - 'POSTGRES_DB=taiga,POSTGRES_USER=taiga,INSTANCE_CONNECTION_NAME=ls -lfml-prod-reports-ce:europe-west3:taiga-it-ce'
   - '--set-secrets'
   - 'SECRET_KEY=TAIGA_SECRET_KEY:latest,POSTGRES_PASSWORD=TAIGA_DB_PASSWORD:latest'
   - '--allow-unauthenticated'
