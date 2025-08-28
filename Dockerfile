@@ -3,10 +3,9 @@ FROM python:3.11-slim
 # Zainstaluj zależności systemowe
 RUN apt-get update && apt-get install -y git build-essential libpq-dev && rm -rf /var/lib/apt/lists/*
 
-# Pobierz backend Taigi
-RUN git clone --branch stable https://github.com/taigaio/taiga-back.git /taiga-back
-
+COPY . /taiga-back
 WORKDIR /taiga-back
+
 
 # Zainstaluj wymagane pakiety Python
 RUN pip install --upgrade pip
